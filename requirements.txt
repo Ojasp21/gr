@@ -1,0 +1,12 @@
+mistralai
+pinecone
+python-dotenv
+fastapi
+uvicorn
+python-multipart
+pydantic
+langchain-mistralai
+langchain-core
+langchain-text-splitters
+langchain-pinecone
+supabase
