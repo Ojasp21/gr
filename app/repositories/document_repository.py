@@ -71,3 +71,17 @@ def delete_document(
     )
 
     return response.data
+
+
+def get_all_documents():
+    response = (
+        supabase
+        .table("documents")
+        .select("*")
+        .order(
+            "uploaded_at",
+            desc=True,
+        )
+        .execute()
+    )
+    return response.data

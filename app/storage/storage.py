@@ -65,3 +65,15 @@ def delete_pdf(
         )
 
     )
+    
+
+
+def get_document_url(
+    storage_path: str,
+):
+
+    return (
+        supabase.storage
+        .from_(SUPABASE_BUCKET)
+        .get_public_url(storage_path)
+    )

@@ -47,6 +47,17 @@ from app.storage.storage import (
     delete_pdf,
 
 )
+from app.repositories.document_repository import (
+
+    get_all_documents,
+
+)
+
+from app.storage.storage import (
+
+    get_document_url,
+
+)
 
 
 router = APIRouter(
@@ -343,3 +354,16 @@ def delete_uploaded_document(
         "document_id":
             document_id,
     }
+    
+@router.get("")
+def list_documents():
+
+    documents = get_all_documents()
+
+    for document in documents:
+
+        document["view_url"] = get_document_url(
+            document["storage_path"]
+        )
+
+    return documents
