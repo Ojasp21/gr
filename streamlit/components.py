@@ -174,7 +174,7 @@ def show_documents(
 
     st.markdown(
         """
-<div class="section-heading">📂 Uploaded Documents</div>
+<div class="section-heading"> Uploaded Documents</div>
 """,
         unsafe_allow_html=True,
     )
@@ -216,7 +216,7 @@ def show_documents(
                     if document.get("view_url"):
 
                         st.link_button(
-                            "👁  View",
+                            "  View",
                             document["view_url"],
                             use_container_width=True,
                         )
@@ -224,7 +224,7 @@ def show_documents(
                 with right:
 
                     if st.button(
-                        "🗑  Delete",
+                        "  Delete",
                         key=document["id"],
                         use_container_width=True,
                     ):

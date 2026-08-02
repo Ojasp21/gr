@@ -254,7 +254,7 @@ with st.sidebar:
 
     if st.button(
 
-        "🧹  Clear Chat",
+        "  Clear Chat",
 
         use_container_width=True,
 
@@ -271,7 +271,7 @@ with st.sidebar:
 st.markdown(
     """
 <div class="app-header">
-    <div class="icon-badge">🤖</div>
+    <div class="icon-badge">☯</div>
     <div>
         <h1>Government Resolution Assistant</h1>
         <p>Ask questions over uploaded Government Resolution documents.</p>
@@ -310,7 +310,7 @@ st.write("")
 # ----------------------------------------------------
 
 chat_tab, documents_tab = st.tabs(
-    ["💬  Chat", "📂  Documents"]
+    ["  Chat", "  Documents"]
 )
 
 # ----------------------------------------------------
